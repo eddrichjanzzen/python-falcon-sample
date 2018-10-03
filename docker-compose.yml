@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  #build within the docker file
+  web:
+    build: .
+    command: uwsgi --http :8000 --wsgi-file falcon_app.py --callable app
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
