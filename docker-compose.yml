@@ -1,6 +1,6 @@
 version: '3'
 services: 
-  #build the dockerfile
+  #build the dockerfile for the python image
   web:
     build: .
     volumes:
