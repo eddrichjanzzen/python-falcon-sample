@@ -16,7 +16,3 @@ class Player(Base):
 		return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
-class Gender(Base):
-	__tablename__ = 'genders'
-	id = Column(Integer, primary_key=True)
-	gender = Column(String)
