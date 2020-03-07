@@ -7,14 +7,4 @@ services:
       - .:/code
     ports:
       - 8000:8000
-    links:
-      - db
-  db:
-    image: postgres
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
-volumes:
-  pgdata:
 
