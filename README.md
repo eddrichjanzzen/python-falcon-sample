@@ -29,7 +29,7 @@ The folder structure will look like this:
 
 ## Project Set up
 
-###Prerequisites
+### Prerequisites
 * docker
 * python
 * docker-compose
