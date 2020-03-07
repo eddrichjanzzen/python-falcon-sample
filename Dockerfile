@@ -12,4 +12,6 @@ RUN pip install -r requirements.txt
 
 ADD . /code/
 
+EXPOSE 8000
+
 CMD ["sh", "run.sh"]
