@@ -1,9 +1,6 @@
-falcon==1.4.1
+falcon==2.0.0
 ujson==1.35
-cython==0.28.5
-uWSGI==2.0.17.1
-requests==2.19.1
-psycopg2-binary==2.7.5
-SQLAlchemy==1.2.12
-alembic==1.0.0
-python-decouple==3.1
+cython==0.29.15
+uWSGI==2.0.18
+requests==2.23.0
+python-decouple==3.3
