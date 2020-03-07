@@ -1,12 +1,8 @@
 import falcon
 import json_utils
 from decouple import config
+from product_resource import ProductResource
 
-engine = create_engine(conn_string, echo=False)
-
-# Create the session
-session_factory = sessionmaker(bind=engine)  
-Session = scoped_session(session_factory)
 
 # Declare Falcon Middleware 
 # RequireJSON will always make sure the application data is in JSON format
@@ -16,10 +12,10 @@ api = falcon.API(middleware=[
 			json_utils.JSONtranslator(),
 		])
 
-
 # Define the resource classes and the routes here:
 # Note that the classes used here, references the folder called api_resources      
 
-api.add_route('/topup', topup)
-api.add_route('/balance_inquiry', balanceinquiry)
-api.add_route('/inquire_topup/{refnumber}', inquiretopup)
+product = ProductResource()
+
+api.add_route('/products', product)
+api.add_route('/products/{product_id}', product, suffix="product")
