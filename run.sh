@@ -1,2 +1,1 @@
-uwsgi --http :8000 --wsgi-file api/app.py --callable api
-# python api/models.py
+uwsgi --http 0.0.0.0:8000 --wsgi-file app.py --callable api
