@@ -12,9 +12,7 @@ api = falcon.API(middleware=[
 			json_utils.JSONtranslator(),
 		])
 
-# Define the resource classes and the routes here:
-# Note that the classes used here, references the folder called api_resources      
-
+# we define our resource here
 product = ProductResource()
 
 api.add_route('/products', product)
