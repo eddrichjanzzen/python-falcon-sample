@@ -2,10 +2,6 @@
 
 A sample implementation for the python falcon micro framework
 
-Blog article is here:
-
-https://eddrichjanzzen.github.io/blog/2020/06/26/Simple-CRUD-python-falcon.html
-
 The folder structure will look like this:
 ```
 ~/environment/falcon-sample
@@ -50,3 +46,5 @@ $ docker-compose up
 $ docker-compose down
 ```
 
+# Blog Article
+https://eddrichjanzzen.github.io/blog/2020/06/26/Simple-CRUD-python-falcon.html
