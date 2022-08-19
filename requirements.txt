@@ -1,5 +1,5 @@
 falcon==2.0.0
-ujson==1.35
+ujson==5.4.0
 cython==0.29.15
 uWSGI==2.0.18
 requests==2.23.0
